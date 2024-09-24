@@ -48,14 +48,7 @@
 %% On the other hand, \alsoaffiliation is used on a per author basis
 %% when authors are associated with multiple institutions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\author{Peter Myung-Won Pak}
-\email{ppak@cmu.edu}
-\affiliation{
-  Department of Mechanical Engineering, Carnegie Mellon University, Pittsburgh,
-  PA, USA
-}
-\author{Francis Ogoke}
-\email{oogoke@andrew.cmu.edu}
+\author{Peter Pak}
 \affiliation{
   Department of Mechanical Engineering, Carnegie Mellon University, Pittsburgh,
   PA, USA
@@ -89,6 +82,7 @@
 %% The manuscript does not need to include \maketitle, which is
 %% executed automatically.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\SectionNumbersOn
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,17 +131,17 @@ shown in this document.
 
 \end{acknowledgement}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% The same is true for Supporting Information, which should use the
-%% suppinfo environment.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{suppinfo}
+\clearpage
+\appendix
 
-This will usually read something like: ``Experimental procedures and
-characterization data for all new compounds. The class will
-automatically add a sentence pointing to the information on-line:
+% Redefine \thesection to include "Appendix"
+\renewcommand{\thesection}{Appendix \Alph{section}}
 
-\end{suppinfo}
+\section{First Appendix Title}
+This is the content for the first appendix.
+
+\section{Second Appendix Title}
+This is the content for the second appendix.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The appropriate \bibliography command should be placed here.
